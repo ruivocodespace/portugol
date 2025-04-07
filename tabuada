@@ -1,0 +1,14 @@
+programa 
+{
+
+inteiro num, aux = 1
+
+  funcao inicio() 
+  {
+    escreva("Insira um número entre 1 e 10:\n")
+    leia(num)
+      
+      para (inteiro aux = 1; aux <= 10; aux++)
+        escreva("Tabuada: ", num * aux, "\n")
+  }
+}
