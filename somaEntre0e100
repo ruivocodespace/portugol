@@ -1,0 +1,13 @@
+programa 
+{
+  inteiro soma, contador
+  
+  funcao inicio()
+  {
+    soma = 0
+
+    para (inteiro contador = 0; contador <= 100;contador = contador + 1)
+    soma = (soma + contador)
+      escreva(soma)
+  }
+}
