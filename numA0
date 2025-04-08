@@ -1,0 +1,14 @@
+programa 
+{
+ 
+inteiro contador, numero
+funcao inicio()
+   
+  {
+   escreva("insira um numero:\n")
+   leia(numero)
+   
+    para (inteiro contador = numero; contador >= 0;contador = contador - 1)
+      escreva(contador," ")
+  }
+}
