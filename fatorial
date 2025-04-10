@@ -1,0 +1,16 @@
+programa {
+  funcao inicio() {
+
+  inteiro numero, contador
+  inteiro fatorial = 1
+    
+    escreva("Insira um numero inteiro maior que zero: ")
+      leia(numero)
+
+        para (contador = 1; contador <= numero; contador++){
+          fatorial = contador * fatorial
+        }
+        
+          escreva("O fatorial de: ", numero, " é " ,fatorial)
+  }
+}
