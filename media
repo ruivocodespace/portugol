@@ -18,8 +18,8 @@ programa {
 
     se (quantidade > 0) {
       media = soma / quantidade
-      escreva("Quantidade de números:\n", quantidade,"\n")
-      escreva("Média dos números:\n", media)
+      escreva("Quantidade de números:", quantidade,"\n")
+      escreva("Média dos números:", media,"\n")
     } senao {
       escreva("Nenhum número válido foi inserido.")
     }
