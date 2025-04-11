@@ -1,0 +1,35 @@
+programa {
+  funcao inicio() {
+  
+  real numero, opcao
+    escreva("Digite o total dos produtos:\n")
+    leia(numero)
+
+      escreva("Escolha o cliente:\n")
+      escreva("1- Funcionário\n")
+      escreva("2- Vip\n")
+      escreva("3- Comum\n")
+      leia(opcao)
+
+      escolha (opcao) {
+        caso 1:
+        opcao = (numero - (numero * 10 /100))
+        escreva("Total: ", opcao)
+        pare
+
+        caso 2:
+        opcao = (numero -(numero * 5 / 100))
+        escreva("Total: ", opcao)
+        pare
+
+        caso 3:
+        opcao = (numero)
+        escreva("Total: ", opcao)
+        pare
+
+        caso contrario:
+        escreva("Insira uma opção válida.")
+      }
+    
+  }
+}
