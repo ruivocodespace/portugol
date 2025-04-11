@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+
+    caracter opcao
+
+      escreva("Escolha M(Masculino) ou F(Feminino):\n")
+      leia(opcao)
+
+        escolha (opcao){
+          caso 'M':
+          escreva("Masculino")
+          pare
+
+          caso 'F':
+          escreva("Feminino")
+          pare
+
+          caso contrario:
+          escreva("Opção inválida")
+          pare
+        }
+  }
+}
