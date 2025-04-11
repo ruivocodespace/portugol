@@ -1,0 +1,44 @@
+programa {
+  funcao inicio() {
+  real plano = 100, idade,opcao
+    
+    escreva("Digite sua idade para saber o valor do seu plano: ")
+    leia(idade)
+
+    se (idade <= 9){
+      plano = (plano + 80)
+      opcao = 1
+    } 
+    
+    senao se (idade >= 10 e idade <= 39){
+      plano = (plano + 50)
+      opcao = 2
+    } 
+    
+    senao se (idade >= 40 e idade <= 59){
+      plano = (plano + 95)
+      opcao = 3
+    } 
+    
+    senao se (idade >= 60 e idade <= 100){
+      plano = (plano + 130)
+      opcao = 4
+    } 
+    
+    senao {
+      escreva("Não foi inserida uma idade válida.\n")
+    }
+
+    escolha (opcao){
+      caso 1:
+      caso 2:
+      caso 3:
+      caso 4:
+      escreva("Valor total do plano R$ ", plano)
+      pare
+
+      caso contrario:
+      escreva("Programa finalizado")
+    }
+  }
+}
