@@ -1,2 +1,0 @@
-# portugol
-Algoritmos em portugol
