@@ -1,0 +1,45 @@
+programa {
+  funcao inicio() {
+    
+  real num1, num2, opcao
+
+    escreva("Digite um número:\n")
+    leia(num1)
+
+    escreva("Digite o segundo número:\n")
+    leia(num2)
+
+      escreva("Escolha a operação\n")
+      escreva("1- Média entre os números digitados\n")
+      escreva("2- Diferença entre os números\n")
+      escreva("3- Produto entre os números digitados\n")
+      escreva("4- Divisão do primeiro pelo segundo\n")
+      leia(opcao)
+
+        escolha (opcao){
+          caso 1:
+          opcao = ((num1 + num2) / 2)
+          escreva("Média:\n", opcao)
+          pare
+
+          caso 2:
+          opcao = (num1 - num2)
+          escreva("Diferença:\n",opcao)
+          pare
+
+          caso 3:
+          opcao = (num1 * num2)
+          escreva("Produto:\n", opcao)
+          pare
+
+          caso 4:
+          opcao = (num1 / num2)
+          escreva("Divisão:\n", opcao)
+          pare
+
+          caso contrario: 
+          escreva("Inválido")
+          pare
+        }
+  }
+}
