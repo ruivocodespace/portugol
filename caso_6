@@ -1,0 +1,33 @@
+programa {
+  funcao inicio() {
+
+    cadeia opcao
+
+      escreva("Digite um mês do ano. Use letra maiúscula:\n")
+      leia(opcao)
+
+        escolha (opcao){
+          caso "DEZEMBRO":
+          caso "JANEIRO":
+          caso "FEVEREIRO":
+          caso "JUNHO":
+          caso "JULHO":
+          escreva("Alta temporada.")
+          pare
+
+          caso "MARÇO":
+          caso "ABRIL":
+          caso "MAIO":
+          caso "SETEMBRO":
+          caso "AGOSTO":
+          caso "NOVEMBRO":
+          caso "OUTUBRO":
+          escreva("Baixa temporada.")
+          pare
+
+          caso contrario:
+          escreva("Opção inválida")
+          pare
+        }
+  }
+}
