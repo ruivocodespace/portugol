@@ -1,0 +1,55 @@
+programa {
+  inclua biblioteca Matematica
+
+  funcao inicio() {
+    real media
+    inteiro opcao
+
+      escreva("Digite sua média final para saber seu conceito\n")
+      leia(media)
+
+        se (media <= 4 e media > 5){
+          opcao = 1          
+        } senao se (media >= 5 e media < 6){
+          opcao = 2
+        } senao se (media >= 6 e media < 7){
+          opcao = 3
+        } senao se (media >= 7 e media < 8){
+          opcao = 4
+        } senao se (media >= 8 e media < 9){
+          opcao = 5
+        } senao se (media > 9 e media <= 10) {
+          opcao = 6
+        } senao {escreva("Valor digitado inválido.\n")}
+
+          escolha (opcao){
+            caso 1:
+            escreva("F")
+            pare
+
+            caso 2:
+            escreva("E")
+            pare
+
+            caso 3:
+            escreva("D")
+            pare
+
+            caso 4:
+            escreva("C")
+            pare
+
+            caso 5:
+            escreva("B")
+            pare
+
+            caso 6:
+            escreva("A")
+            pare
+
+            caso contrario:
+            escreva("Programa finalizado")            
+          }
+        }        
+  }
+}
