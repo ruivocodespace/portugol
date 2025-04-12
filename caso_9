@@ -1,0 +1,58 @@
+programa {
+  funcao inicio() {
+  real frete, valor
+
+    escreva("Digite o valor do produto:\n")
+    leia(valor)
+
+      escreva("Insira o país de origem:\n")
+      escreva("1- Estados Unidos\n")
+      escreva("2- França\n")
+      escreva("3- México\n")
+      escreva("4- Argentina\n")
+      escreva("5- China\n")
+      leia(frete)
+
+        escolha (frete){
+          caso 1:
+          frete = 60
+          valor = (valor + frete)
+          escreva("Frete: ", frete)
+          escreva("\nTotal da compra: ", valor)
+          pare
+
+          caso 2:
+          frete = 75.50
+          valor = (valor + frete)
+          escreva("Frete: ", frete)
+          escreva("\nTotal da compra: ", valor)
+          pare
+
+          caso 3:
+          frete = 50
+          valor = (valor + frete)
+          escreva("Frete: ", frete)
+          escreva("\nTotal da compra: ", valor)
+          pare
+
+          caso 4:
+          frete = 27.35
+          valor = (valor + frete)
+          escreva("Frete: ", frete)
+          escreva("\nTotal da compra: ", valor)
+          pare
+
+          caso 5:
+          frete = 80
+          valor = (valor + frete)
+          escreva("Frete: ", frete)
+          escreva("\nTotal da compra: ", valor)
+          pare
+
+          caso contrario:
+          escreva("Insira um país válido.")
+          pare
+        }
+    
+  }
+}
