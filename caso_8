@@ -1,1 +1,49 @@
+programa {
+  funcao inicio() {
+    real valor
+    inteiro codigo, outro
+
+      escreva("Digite o valor da compra:\n")
+      leia(valor)
+        
+        escreva("Forma de pagamento:\n")
+        escreva("1- À vista\n")
+        escreva("2- Em duas vezes\n")
+        escreva("3- Em três vezes\n")
+        escreva("4- De quatro a seis vezes\n")
+        leia(codigo)
+
+          escolha (codigo) {
+            caso 1:
+              valor = (valor - (valor * 30 /100))
+              escreva("Parcela única\n", "Total: ", valor)
+              pare
+
+            caso 2:
+              valor = (valor - (valor * 20 /100))
+              escreva("2 parcelas de: ", valor / 2,"\n", "Total: ", valor)
+              pare
+            
+            caso 3:
+              valor = (valor - (valor * 10 /100))
+              escreva("3 parcelas de: ", valor / 3, "\n", "Total: ", valor)
+              pare
+
+            caso 4:
+              escreva("4 parcelas de: ", valor / 4, "\n", "Total: ", valor)
+              pare
+            
+            caso 5:
+              escreva("5 parcelas de: ", valor / 5, "\n", "Total: ", valor)
+              pare
+
+            caso 6:
+              escreva("6 parcelas de: ", valor / 6, "\n", "Total: ", valor)
+              pare
+
+            caso contrario:
+            escreva("Quantidade de parcelas inválida.")
+          }
+  }
+}
 
