@@ -13,18 +13,18 @@ programa {
 
       escolha (opcao) {
         caso 1:
-        opcao = (numero - (numero * 10 /100))
-        escreva("Total: ", opcao)
+        opcao = (numero - (numero * 10 / 100))
+        escreva("Total: R$ ", opcao)
         pare
 
         caso 2:
-        opcao = (numero -(numero * 5 / 100))
-        escreva("Total: ", opcao)
+        opcao = (numero - (numero * 5 / 100))
+        escreva("Total: R$ ", opcao)
         pare
 
         caso 3:
         opcao = (numero)
-        escreva("Total: ", opcao)
+        escreva("Total: R$ ", opcao)
         pare
 
         caso contrario:
