@@ -19,14 +19,26 @@ programa
 					escreva("Alimento perecivel")
 					pare
 
-					caso 7:
-					escreva("Higiene pessoal")
-					pare
-
 					caso 5:
 					caso 6:
 					escreva("Vestuário")
 					pare
+
+					caso 7:
+					escreva("Higiene pessoal")
+					pare
+
+					caso 8:
+        				caso 9:
+        				caso 10:
+       					caso 11:
+        				caso 12:
+        				caso 13:
+        				caso 14:
+        				caso 15:
+					escreva("Limpeza e utensílios domésticos.")
+					pare
+
 
 					caso contrario:
 					escreva("Inválido")
