@@ -1,0 +1,13 @@
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro nota[5] = {10,8,10,9,7}
+    inteiro contador 
+
+      para (inteiro contador = 0; contador < 5; contador++) {
+        escreva(nota[contador])
+
+      } 
+  }
+}
