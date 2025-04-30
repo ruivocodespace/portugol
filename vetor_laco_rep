@@ -1,0 +1,16 @@
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro nota[5] 
+    inteiro contador 
+
+      para (inteiro contador = 0; contador < 5; contador++) {
+        escreva("Digite a nota ", contador + 1, ": ")
+        leia(nota[contador])
+      }  
+        para (inteiro contador = 0; contador < 5; contador++){
+          escreva(nota[contador])
+      }
+  } 
+}
