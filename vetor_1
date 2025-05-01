@@ -1,0 +1,18 @@
+programa 
+{
+  funcao inicio()
+  { //Declara as variaveis
+    inteiro numero[5]
+    inteiro contador
+  //Laco para coletar os numeros e colocar no vetor
+    para (inteiro contador = 0; contador < 5; contador++){
+      escreva("Digite o numero ",contador + 1,": ")
+      leia(numero[contador])
+    }
+//Laco que imprime os numeros na tela
+    para (inteiro contador = 0; contador < 5; contador++){
+      escreva(numero[contador])
+      escreva(" ")
+    }
+  }
+}
