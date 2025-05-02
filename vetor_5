@@ -1,0 +1,28 @@
+programa 
+{
+  funcao inicio() 
+  {
+    //Variaveis
+    inteiro numero[3][3]
+    inteiro soma[3]
+    inteiro contador, contadorb
+      
+      //Input dos numeros na matriz
+      para(contador = 0; contador < 3; contador++){
+        para(contadorb = 0; contadorb < 3; contadorb++){
+          escreva("Insira o ", contadorb + 1,"º número: ")
+          leia(numero[contador][contadorb])
+        }
+      }
+      //Calcular a soma das colunas e linhas
+      para(contadorb = 0; contadorb < 3; contadorb++){
+        soma[contadorb] = numero[0][contadorb] + numero[1][contadorb] + numero[2][contadorb]
+      }
+      
+      escreva("Vetor soma:\n")
+      //Imprime na tela soma dos numeros da matriz soma = coluna + linha
+      para(contadorb = 0; contadorb < 3; contadorb++){
+        escreva(soma[contadorb]," ")
+      } 
+  }
+}
