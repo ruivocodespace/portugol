@@ -1,0 +1,35 @@
+programa 
+{
+  funcao inicio() 
+  {
+    //Declaracao de variaveis
+    cadeia nome[5]
+    cadeia nome_b
+    inteiro contador, contadorb
+      
+      //Solicita os nomes para o usuario
+      para(contador = 0; contador < 5; contador++){
+        escreva("Insira o ", contador + 1,"º"," nome: ")
+        leia(nome[contador])
+      }
+      //Solicita um nome para o usuario verificar se encontra no vetor
+      escreva("Digite um nome: \n")
+      leia(nome_b)
+
+
+      //Verfica se o nome esta em algum vetor
+      para(contador = 0; contador < 5; contador++){
+        se (nome[contador] == nome_b)
+        {
+          //Se o nome estiver no vetor ele imprime "ACHEI"
+          escreva("ACHEI")
+          pare
+        } //Se o nome nao estiver no vetor ele imprime "NAO ACHEI"
+        senao 
+        {
+          escreva("NAO ACHEI")
+          pare
+        }
+      }  
+  }
+}
