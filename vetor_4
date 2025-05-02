@@ -1,0 +1,30 @@
+programa 
+{
+  funcao inicio() 
+  {
+    //Variaveis
+    inteiro numero[2][5]
+    inteiro soma[5]
+    inteiro diferenca[5]
+    inteiro multiplicacao[5]
+    inteiro contador, contadorb
+
+      //Solicita 5 digitos ao usuario
+      para (contador = 0; contador < 2; contador++){
+        para (contadorb = 0; contadorb < 5; contadorb++){
+          escreva("Insira o ", contadorb + 1, "º", " numero: ")
+          leia(numero[contador][contadorb])
+        }
+      }
+      //Calcula o vetor 1 sobre o 2
+      para (contadorb = 0; contadorb < 5; contadorb++){
+       soma[contadorb] = numero[0][contadorb] + numero[1][contadorb]
+       diferenca[contadorb] = numero[0][contador] - numero[1][contadorb]
+       multiplicacao[contadorb] = numero[0][contadorb] * numero[1][contadorb]
+      }
+      //Imprime os resultados dos cauculos
+      escreva("Soma entre os numeros:\n", soma,"\n")
+      escreva("Diferenca entre os numeros:\n", diferenca,"\n")
+      escreva("Multiplicacao entre os numeros:\n", multiplicacao,"\n")
+  }
+}
