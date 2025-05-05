@@ -1,28 +1,72 @@
-programa 
+programa
 {
-  funcao inicio() 
-  {
-    //Variaveis
-    inteiro numero[3][3]
-    inteiro soma[3]
-    inteiro contador, contadorb
-      
-      //Input dos numeros na matriz
-      para(contador = 0; contador < 3; contador++){
-        para(contadorb = 0; contadorb < 3; contadorb++){
-          escreva("Insira o ", contadorb + 1,"º número: ")
-          leia(numero[contador][contadorb])
+
+    funcao inicio()
+    {
+        inteiro num1[3][3], num2[3][3], soma[3][3]
+        inteiro contadorl, contadorc
+
+        //primeira matriz
+        escreva("\nPreencha a primeira matriz:\n")
+        para (contadorl = 0; contadorl < 3; contadorl++)
+        {
+            para (contadorc = 0; contadorc < 3; contadorc++)
+            {
+                escreva("Insira o valor da linha ", contadorl + 1," coluna ", contadorc + 1, ": ")
+                leia(num1[contadorl][contadorc])
+            }
         }
-      }
-      //Calcular a soma das colunas e linhas
-      para(contadorb = 0; contadorb < 3; contadorb++){
-        soma[contadorb] = numero[0][contadorb] + numero[1][contadorb] + numero[2][contadorb]
-      }
-      
-      escreva("Vetor soma:\n")
-      //Imprime na tela soma dos numeros da matriz soma = coluna + linha
-      para(contadorb = 0; contadorb < 3; contadorb++){
-        escreva(soma[contadorb]," ")
-      } 
-  }
+
+        //Segunda matriz
+           escreva("\nPreencha a segunda matriz:\n")
+        para (contadorl = 0; contadorl < 3; contadorl++)
+        {
+            para (contadorc = 0; contadorc < 3; contadorc++)
+            {
+                escreva("Insira o valor da linha ", contadorl + 1," coluna ", contadorc + 1, ": ")
+                leia(num2[contadorl][contadorc])
+            }
+        }
+
+        //Impressão das matrizes
+        escreva("\nMatriz 1:\n")
+        para (contadorl = 0; contadorl < 3; contadorl++)
+        {
+            para (contadorc = 0; contadorc < 3; contadorc++)
+            {
+                escreva(num1[contadorl][contadorc], " ")
+            }
+            escreva("\n")
+        }
+
+        escreva("\nMatriz 2:\n")
+        para (contadorl = 0; contadorl < 3; contadorl++)
+        {
+            para (contadorc = 0; contadorc < 3; contadorc++)
+            {
+                escreva(num2[contadorl][contadorc], " ")
+            }
+            escreva("\n")
+        }
+
+        //Cálculo da matriz soma
+        para (contadorl = 0; contadorl < 3; contadorl++)
+        {
+            para (contadorc = 0; contadorc < 3; contadorc++)
+            {
+                soma[contadorl][contadorc] = num1[contadorl][contadorc] + num2[contadorl][contadorc]
+            }
+        }
+
+
+        escreva("\nMatriz Soma:\n")
+        para (contadorl = 0; contadorl < 3; contadorl++)
+        {
+            para (contadorc = 0; contadorc < 3; contadorc++)
+            {
+                escreva(soma[contadorl][contadorc], " ")
+            }
+            escreva("\n")
+        }
+    }
 }
