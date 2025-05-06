@@ -1,0 +1,26 @@
+//vetor_inversao
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro numeros[5], inverso[5]
+    inteiro i, j
+
+    //Solicita a entrada dos 5 números 
+   para (i = 0; i < 5; i++){ 
+      escreva("Digite o ", i + 1, "º. número: ") 
+      leia(numeros[i])
+   }
+   //Inverte o vetor 
+   j = 4
+   para (i = 0; i < 5; i++){
+    inverso[i] = numeros[j]
+      j = j - 1
+   }
+
+   //Exibe o vetor invertido
+   escreva("Vetor invertido: ")
+    para(i = 0; i < 5; i++)
+      escreva(inverso[i], " ")
+  }
+}
