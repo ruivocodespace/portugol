@@ -1,0 +1,31 @@
+//vetor_frequenciaNumeros
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro numeros[10]
+    inteiro frequencia[100] //Assumindo números de 0 a 100
+    inteiro i, num
+
+      //Inicializa o vetor de frequência com zeros
+      para(i = 0; i < 100; i++){
+        frequencia[i] = 0
+      }
+        //Solicita a entrada dos 10 números
+        para(i = 0; i < 10; i++){
+          escreva("Digite o ", i + 1, "º. número: ")
+          leia(numeros[i])
+        }
+      //Conta a frequência de cada número
+      para (i = 0; i < 10; i++){
+        num = numeros[i]
+        frequencia[num] = frequencia[num] + 1
+      }
+      //Exibe a frequência de cada número
+      para(i = 0; i < 100; i++){
+        se (frequencia[i] > 0){
+          escreva("\nO número ", i, " aparece ", frequencia[i], " vez(es)")
+        }
+      }
+  }
+}
