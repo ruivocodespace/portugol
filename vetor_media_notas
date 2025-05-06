@@ -1,0 +1,24 @@
+//media_notas
+
+programa 
+{
+  funcao inicio() 
+  {
+    real notas[4]
+    real soma, media
+    inteiro i
+      //define soma
+      soma = 0
+      //coleta as notas
+      para(i = 0; i < 4; i++){
+        escreva("Digite a ", i + 1, "ª nota: ")
+        leia(notas[i])
+        //cada vez que passa soma a nota anterior com a proxima
+        soma = soma + notas[i]
+        
+      }
+        //calcula e impressao da media
+        media = (soma / 4)
+          escreva("A média de notas é: ", media)    
+  }
+}
