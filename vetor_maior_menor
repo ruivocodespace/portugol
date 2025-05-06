@@ -1,0 +1,44 @@
+//maior_menor_valor
+programa 
+{
+  funcao inicio() 
+  {
+    cadeia nomes[5]
+    inteiro idades[5]
+    real soma, media, maiorIdade, menorIdade
+    inteiro i, indiceMaior, indiceMenor
+
+      //Solicita a entrada dos nomes e idades
+      soma = 0
+      para(i = 0; i < 5; i++){
+        escreva("Digite o nome da ", i + 1, "ª. pessoa: ")
+        leia(nomes[i])
+        escreva("Digite a idade da ", i + 1, "ª. pessoa: ")
+        leia(idades[i])
+        soma = soma + idades[i]
+      }
+      //Inicializa maiorIdade e menorIdade com o primeiro valor do vetor
+        maiorIdade = idades[1]
+        menorIdade = idades[1]
+        indiceMaior = 1
+        indiceMenor = 1
+      //Encontra a maior e a menor idade
+      para (i = 0; i < 5; i++){
+      se (idades[i] > maiorIdade){
+         maiorIdade = idades[i]
+         indiceMaior = i
+        }
+      //menor
+      se (idades[i] < menorIdade){
+         menorIdade = idades[i]
+         indiceMenor = i
+        }
+      }
+      //calcula a media
+        media = (soma / 5)
+      // Exibe os resultados
+        escreva("A maior idade é: ", maiorIdade, " (", nomes[indiceMaior], ")")
+        escreva("\nA menor idade é: ", menorIdade, " (", nomes[indiceMenor], ")")
+        escreva("\nA média das idades é: ", media)
+  }
+}
