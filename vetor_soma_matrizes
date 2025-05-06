@@ -1,0 +1,40 @@
+//vetor_soma_matrizes
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro matrizA[3][3], matrizB[3][3], matrizSoma[3][3]
+    inteiro i, j
+
+      //Entrada de dados para a Matriz A
+      escreva("Digite os elementos da Matriz A:\n")
+        para(i = 0; i < 3; i++){
+          para(j = 0; j < 3; j++){
+            escreva("A[", i + 1, ",", j + 1, "]: ")
+              leia(matrizA[i][j])
+          }
+        }
+      //Entrada de dados para a Matriz B
+      escreva("Digite os elementos da Matriz B:\n")
+        para(i = 0; i < 3; i++){
+          para(j = 0; j < 3; j++){
+            escreva("B[", i + 1, ",", j + 1, "]: ")
+              leia(matrizB[i][j])
+          }
+        }
+      //Calcula soma das matrizes
+      para(i = 0; i < 3; i++){
+        para(j = 0; j < 3; j++){
+          matrizSoma[i][j] = matrizA[i][j] + matrizB[i][j]
+        }
+      }
+      //Exibe a soma
+      escreva("A matriz soma é:\n")
+      para(i = 0; i < 3; i++){
+        para(j = 0; j < 3; j++){
+          escreva(matrizSoma[i][j], " ")
+        }
+      escreva("\n")  // Muda de linha após cada linha da matriz
+      }
+  }
+}
