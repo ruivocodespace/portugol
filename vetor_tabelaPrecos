@@ -1,0 +1,58 @@
+programa 
+{
+  funcao inicio() 
+  {
+    real tabelaPrecos[4][3] //4 produtos, 3 fornecedores (exemplo)
+    cadeia produtos[4]
+    cadeia fornecedores[3]
+    inteiro produto, fornecedor
+    inteiro i, j
+
+       // Inicializar os vetores de produtos e fornecedores
+   produtos[0] = "Produto A"
+   produtos[1] = "Produto B"
+   produtos[2] = "Produto C"
+   produtos[3] = "Produto D"
+
+   fornecedores[0] = "Fornecedor 1"
+   fornecedores[1] = "Fornecedor 2"
+   fornecedores[2] = "Fornecedor 3"
+
+   // Preencher a tabela de preços (pode ser fixo ou entrada do usuário)
+   // Neste exemplo, vamos fixar os preços
+    tabelaPrecos[0][0] = 10.50
+    tabelaPrecos[0][1] = 11.00
+    tabelaPrecos[0][2] = 10.75
+    tabelaPrecos[1][0] = 20.00
+    tabelaPrecos[1][1] = 19.50
+    tabelaPrecos[1][2] = 20.25
+    tabelaPrecos[2][0] = 30.00
+    tabelaPrecos[2][1] = 31.00
+    tabelaPrecos[2][2] = 29.75
+    tabelaPrecos[3][0] = 40.00
+    tabelaPrecos[3][1] = 40.50
+    tabelaPrecos[3][2] = 41.25
+
+    //Menu de consulta
+    escreva("--- Consulta de Preços ---\n")
+    escreva("Produtos:\n")
+
+      para(i = 0; i < 4; i++){
+        escreva(i, " - ", produtos[i], "\n")
+      }
+      escreva("Fornecedores:\n")
+      para(i = 0; i < 3; i++){
+        escreva(i, " - ", fornecedores[i],"\n")
+      }
+        escreva("Digite o número do Produto desejado:\n")
+          leia(produto)
+        escreva("Digite o número do Fornecedor desejado:\n")
+          leia(fornecedor)
+
+          se(produto >= 0 e produto <= 4 e fornecedor >= 1 e fornecedor <= 3){
+            escreva("O preço de ", produtos[produto], " do ", fornecedores[fornecedor], " é de: R$ ", tabelaPrecos[produto][fornecedor])    
+          } senao{
+            escreva("Opção inválida de produto ou fornecedor.")
+          }
+  }
+}
